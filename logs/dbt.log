@@ -1,0 +1,225 @@
+[0m15:28:05.203831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020224FED750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020224FED990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020224FED590>]}
+
+
+============================== 15:28:05.209788 | ae5e5d55-73fc-4a8a-b964-b171c5a220cb ==============================
+[0m15:28:05.209788 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:28:05.211800 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\MAGICO\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init crm_dbt', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m15:28:05.257003 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\MAGICO\.dbt
+[0m15:28:05.261995 [debug] [MainThread]: Starter project path: C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m15:28:05.367543 [info ] [MainThread]: Setting up your profile.
+[0m15:28:45.648685 [info ] [MainThread]: Profile crm_dbt written to C:\Users\MAGICO\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:28:45.652203 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:28:45.654201 [info ] [MainThread]: dbt version: 1.12.5
+[0m15:28:45.655201 [info ] [MainThread]: python version: 3.11.9
+[0m15:28:45.656203 [info ] [MainThread]: python path: C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\python.exe
+[0m15:28:45.657207 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m15:28:45.757260 [info ] [MainThread]: Using profiles dir at C:\Users\MAGICO\.dbt
+[0m15:28:45.758226 [info ] [MainThread]: Using profiles.yml file at C:\Users\MAGICO\.dbt\profiles.yml
+[0m15:28:45.759234 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\crm_dbt\dbt_project.yml
+[0m15:28:45.763754 [info ] [MainThread]: adapter type: duckdb
+[0m15:28:45.764757 [info ] [MainThread]: adapter version: 1.11.0
+[0m15:28:45.925037 [info ] [MainThread]: Configuration:
+[0m15:28:45.926016 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:28:45.927015 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:28:45.928008 [info ] [MainThread]: Required dependencies:
+[0m15:28:45.930003 [debug] [MainThread]: Executing "git --help"
+[0m15:28:45.955633 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m15:28:45.956593 [info ] [MainThread]: Connection:
+[0m15:28:45.957596 [info ] [MainThread]:   database: dev
+[0m15:28:45.958593 [info ] [MainThread]:   schema: main
+[0m15:28:45.959594 [info ] [MainThread]:   path: dev.duckdb
+[0m15:28:45.959594 [info ] [MainThread]:   config_options: None
+[0m15:28:45.961102 [info ] [MainThread]:   extensions: None
+[0m15:28:45.962114 [info ] [MainThread]:   settings: {}
+[0m15:28:45.963124 [info ] [MainThread]:   external_root: .
+[0m15:28:45.965126 [info ] [MainThread]:   use_credential_provider: None
+[0m15:28:45.967127 [info ] [MainThread]:   attach: None
+[0m15:28:45.969122 [info ] [MainThread]:   filesystems: None
+[0m15:28:45.970123 [info ] [MainThread]:   remote: None
+[0m15:28:45.972659 [info ] [MainThread]:   plugins: None
+[0m15:28:45.973646 [info ] [MainThread]:   disable_transactions: False
+[0m15:28:45.974647 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m15:28:46.512504 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m15:28:50.056640 [debug] [MainThread]: Using duckdb connection "debug"
+[0m15:28:50.057676 [debug] [MainThread]: On debug: select 1 as id
+[0m15:28:50.057676 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:28:50.086736 [debug] [MainThread]: SQL status: OK in 0.029 seconds
+[0m15:28:50.088773 [debug] [MainThread]: On debug: Close
+[0m15:28:50.089735 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:28:50.090737 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:28:50.090737 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m15:28:50.092737 [info ] [MainThread]: Your new dbt project "crm_dbt" was created!
+Initialized new project in C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\crm_dbt\crm_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:28:50.093765 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m15:28:50.096741 [debug] [MainThread]: Command `dbt init` succeeded at 15:28:50.095741 after 45.04 seconds
+[0m15:28:50.097744 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:28:50.099742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020225314550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020225818310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020224F40210>]}
+[0m15:28:50.100739 [debug] [MainThread]: Flushing usage events
+[0m15:28:51.515057 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:37:19.177233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D7440450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D7567250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D74ED390>]}
+
+
+============================== 15:37:19.183199 | 3e67e744-85e6-4f01-8100-6cff721bb342 ==============================
+[0m15:37:19.183199 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:37:19.185209 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\MAGICO\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m15:37:19.227449 [info ] [MainThread]: dbt version: 1.12.5
+[0m15:37:19.228417 [info ] [MainThread]: python version: 3.11.9
+[0m15:37:19.230415 [info ] [MainThread]: python path: C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\python.exe
+[0m15:37:19.231421 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m15:37:19.237417 [info ] [MainThread]: target not specified in profile 'target', using 'default'
+[0m15:37:19.242414 [info ] [MainThread]: target not specified in profile 'type', using 'default'
+[0m15:37:19.246448 [info ] [MainThread]: target not specified in profile 'path', using 'default'
+[0m15:37:19.247416 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+argument of type 'int' is not iterable
+[0m15:37:19.251420 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 440, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 404, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 370, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 316, in from_raw_profile_info
+    target_name, profile_data = cls.render_profile(
+                                ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\config\profile.py", line 275, in render_profile
+    elif "target" in raw_profile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'int' is not iterable
+
+[0m15:37:19.255415 [debug] [MainThread]: Command `dbt debug` failed at 15:37:19.255415 after 0.22 seconds
+[0m15:37:19.257420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D74EBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D74EBB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8D74EBE50>]}
+[0m15:37:19.260415 [debug] [MainThread]: Flushing usage events
+[0m15:37:20.765552 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:40:51.040095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEA73157D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEABBB1A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEABBB3250>]}
+
+
+============================== 15:40:51.045684 | e14cdb0a-3efa-48a4-bcfd-d24b4aa7f39b ==============================
+[0m15:40:51.045684 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:40:51.047700 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\MAGICO\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m15:40:51.086720 [info ] [MainThread]: dbt version: 1.12.5
+[0m15:40:51.087683 [info ] [MainThread]: python version: 3.11.9
+[0m15:40:51.089715 [info ] [MainThread]: python path: C:\Users\MAGICO\AppData\Local\Programs\Python\Python311\python.exe
+[0m15:40:51.090684 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m15:40:51.355174 [info ] [MainThread]: Using profiles dir at C:\Users\MAGICO\.dbt
+[0m15:40:51.356180 [info ] [MainThread]: Using profiles.yml file at C:\Users\MAGICO\.dbt\profiles.yml
+[0m15:40:51.357177 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\dbt_project.yml
+[0m15:40:51.362175 [info ] [MainThread]: adapter type: duckdb
+[0m15:40:51.363178 [info ] [MainThread]: adapter version: 1.11.0
+[0m15:40:51.364176 [info ] [MainThread]: Configuration:
+[0m15:40:51.365180 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:40:51.366191 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:40:51.367178 [info ] [MainThread]: Required dependencies:
+[0m15:40:51.369182 [debug] [MainThread]: Executing "git --help"
+[0m15:40:51.389183 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m15:40:51.390185 [info ] [MainThread]: Connection:
+[0m15:40:51.391177 [info ] [MainThread]:   database: crm_sales
+[0m15:40:51.392226 [info ] [MainThread]:   schema: main
+[0m15:40:51.393175 [info ] [MainThread]:   path: C:/Users/MAGICO/OneDrive/Dokumenti/technical depi/ETI Project/crm_sales.duckdb
+[0m15:40:51.394197 [info ] [MainThread]:   config_options: None
+[0m15:40:51.395193 [info ] [MainThread]:   extensions: None
+[0m15:40:51.396175 [info ] [MainThread]:   settings: {}
+[0m15:40:51.397191 [info ] [MainThread]:   external_root: .
+[0m15:40:51.399179 [info ] [MainThread]:   use_credential_provider: None
+[0m15:40:51.401181 [info ] [MainThread]:   attach: None
+[0m15:40:51.403177 [info ] [MainThread]:   filesystems: None
+[0m15:40:51.404180 [info ] [MainThread]:   remote: None
+[0m15:40:51.405205 [info ] [MainThread]:   plugins: None
+[0m15:40:51.407178 [info ] [MainThread]:   disable_transactions: False
+[0m15:40:51.409176 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m15:40:51.885040 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m15:40:51.989440 [debug] [MainThread]: Using duckdb connection "debug"
+[0m15:40:51.990455 [debug] [MainThread]: On debug: select 1 as id
+[0m15:40:51.991420 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:40:52.014741 [debug] [MainThread]: SQL status: OK in 0.023 seconds
+[0m15:40:52.016741 [debug] [MainThread]: On debug: Close
+[0m15:40:52.016741 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:40:52.017758 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:40:52.019741 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\dbt_project.yml> not found
+
+[0m15:40:52.020757 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m15:40:52.022741 [debug] [MainThread]: Command `dbt debug` failed at 15:40:52.022741 after 1.14 seconds
+[0m15:40:52.022741 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:40:52.023741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEA7314C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEABA78150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEABC9DA10>]}
+[0m15:40:52.024750 [debug] [MainThread]: Flushing usage events
+[0m15:40:54.385644 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:02:11.636683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188083D3110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001880CCB4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001880CBED990>]}
+
+
+============================== 17:02:11.646717 | 468ebd62-5582-4536-a0f1-727bf3b442e6 ==============================
+[0m17:02:11.646717 [info ] [MainThread]: Running with dbt=1.12.5
+[0m17:02:11.648722 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\MAGICO\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs generate --profiles-dir C:\\Users\\MAGICO\\.dbt', 'log_path': 'logs'}
+[0m17:02:11.650537 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:02:11.654080 [debug] [MainThread]: Command `dbt docs generate` failed at 17:02:11.653061 after 0.17 seconds
+[0m17:02:11.655059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001880CBEBB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001880CBEBB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001880CBFF010>]}
+[0m17:02:11.656062 [debug] [MainThread]: Flushing usage events
+[0m17:02:13.021976 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:02:18.351325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD17FC510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD16F4350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD16E7B10>]}
+
+
+============================== 17:02:18.357289 | d61ec193-641f-413c-a832-95dd6a06f2b1 ==============================
+[0m17:02:18.357289 [info ] [MainThread]: Running with dbt=1.12.5
+[0m17:02:18.358315 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\MAGICO\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs serve --profiles-dir C:\\Users\\MAGICO\\.dbt --port 8081', 'log_path': 'logs'}
+[0m17:02:18.360286 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:02:18.362342 [debug] [MainThread]: Command `dbt docs serve` failed at 17:02:18.362342 after 0.15 seconds
+[0m17:02:18.363323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD17BC090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD17BE910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013BD17BFE10>]}
+[0m17:02:18.364333 [debug] [MainThread]: Flushing usage events
+[0m17:02:19.710218 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:02:40.282080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741D1603D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741D314B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741D314850>]}
+
+
+============================== 17:02:40.288703 | a2e7b446-7ce1-4de7-b968-50ab87df0f63 ==============================
+[0m17:02:40.288703 [info ] [MainThread]: Running with dbt=1.12.5
+[0m17:02:40.289745 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\MAGICO\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs generate --profiles-dir C:\\Users\\MAGICO\\.dbt', 'log_path': 'logs'}
+[0m17:02:40.290783 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\MAGICO\OneDrive\Dokumenti\technical depi\ETI Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:02:40.292752 [debug] [MainThread]: Command `dbt docs generate` failed at 17:02:40.292752 after 0.15 seconds
+[0m17:02:40.292752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741D20BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741D21F110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001741D21FD10>]}
+[0m17:02:40.293751 [debug] [MainThread]: Flushing usage events
+[0m17:02:41.709654 [debug] [MainThread]: An error was encountered while trying to flush usage events

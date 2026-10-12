@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_sales_pipeline
+    columns:
+      - name: opportunity_id
+        data_tests:
+          - unique
+          - not_null

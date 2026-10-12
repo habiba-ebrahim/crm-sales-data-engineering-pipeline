@@ -1,0 +1,99 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_account
+    columns:
+      - name: account_key
+        data_tests:
+          - unique
+          - not_null
+      - name: account_name
+        data_tests:
+          - unique
+          - not_null
+      - name: parent_account_key
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_key
+
+  - name: dim_product
+    columns:
+      - name: product_key
+        data_tests:
+          - unique
+          - not_null
+      - name: product_name
+        data_tests:
+          - unique
+
+  - name: dim_sales_agent
+    columns:
+      - name: sales_agent_key
+        data_tests:
+          - unique
+          - not_null
+      - name: sales_agent_name
+        data_tests:
+          - unique
+
+  - name: fact_opportunity
+    columns:
+      - name: opportunity_id
+        data_tests:
+          - unique
+          - not_null
+      - name: account_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_account')
+                field: account_key
+      - name: product_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_product')
+                field: product_key
+      - name: sales_agent_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_sales_agent')
+                field: sales_agent_key
+      - name: engage_date_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+      - name: close_date_key
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+      - name: deal_stage
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Prospecting', 'Engaging', 'Won', 'Lost']
+      - name: is_closed
+        data_tests:
+          - not_null
+      - name: is_won
+        data_tests:
+          - not_null
